@@ -28,7 +28,7 @@
     <div class="contacts_leftside">
       <div class="constacts_leftside__upper">
         <h1 class="question">Оставьте заявку</h1>
-        <p>Расскажите о проекте и знапишите вопросы</p>
+        <p>Расскажите о проекте и напишите вопросы</p>
       </div>
       <div class="contacts_leftside__bottom">
         <h2 class="email">go@thegradient.ru</h2>
@@ -39,11 +39,6 @@
   </div>
   <div class="col-lg-6 col-md-6 col-12 p-0">
     <form class="contacts_rightside">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1 class="project-form__title">Начать работу над проектом</h1>
-        </div>
-      </div>
       <div class="row">
         <div class="col-lg-6">
           <input class="project-form__input" type="text" placeholder="Имя" required="true"/>
@@ -75,15 +70,20 @@
           <input class="project-form__input" type="text" placeholder="Срок" required="true"/>
         </div>
       </div>
-      <div class="row">
-        <input class="project-form__input" type="file" name="f"/>
+      <div class="row"><div class="input__wrapper">
+<input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+<label for="input__file" class="input__file-button">
+<span class="input__file-icon-wrapper"><img class="input__file-icon" src="./img/screp.svg" alt="Выбрать файл" width="25"></span>
+<span class="input__file-button-text">Прикрепить файл</span>
+</label>
+</div>
       </div>
-      <div class="row justify-content-between">
-        <div class="col-lg-4 p-0">
-          <p>Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
+      <div class="row justify-content-between flex-wrap-reverse">
+        <div class="col-lg-5 col-12">
+          <p class="access">Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
         </div>
-        <div class="col-lg-4 p-0">
-          <button class="project-form__btn">Отправить</button>
+        <div class="col-lg-6 col-12">
+          <button class="contact-form__btn">Отправить</button>
         </div>
       </div>
     </form>
