@@ -17,11 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         if ($('.services__item').length){
           const items = document.querySelectorAll('.services__item__title');
-               items[0].src='./img/sites-red.svg';
+               items[0].src='./img/site-red.svg';
                items[1].src='./img/presentation-red.svg';
                items[2].src='./img/firm-red.svg';
-
-
 
         }
     }
