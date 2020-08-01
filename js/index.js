@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if ($(".next_img").length) {
             document.querySelector('.next_img').src = './img/arrow-width.svg';
         }
-        if ($('.carousel-navigation.container').length) {
-            document.querySelector('.carousel-navigation.container').style.display = 'none';
-        }
+        // if ($('.carousel-navigation').length) {
+        //     document.querySelector('.carousel-navigation.container').style.display = 'none';
+        // }
 
 
         document.querySelectorAll(".more").forEach((item) => {
@@ -31,11 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 // Carousel iteration
-    if ($('.carousel-navigation_iterator').length, $('.next').length, $('carousel-iterator').length) {
+    if ($('.carousel-navigation_iterator').length, $('.next').length, $('.carousel-iterator').length) {
         const button = document.querySelector('.next'),
             screens = document.querySelectorAll('.carousel-iterator'),
             iterators = document.querySelectorAll('.carousel-navigation_iterator');
-
         class Counter {
             constructor() {
                 this.count = 0;
@@ -50,11 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function hideScreens() {
+
             screens.forEach(item => {
                 item.style.display = 'none';
             });
             screens[0].style.display = 'block';
         }
+        hideScreens();
 
         const counter = new Counter();
 
@@ -66,8 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
             screens[counter.count].style.display = 'block';
             iterators[counter.count].classList.add('active_iterator');
         });
-
-        hideScreens();
 
     }
 
