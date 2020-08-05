@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/ff2f3aab2f.js" crossorigin="anonymous"></script>
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"/></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top align-items-center"><a class="navbar-brand" href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"><span class="navbar-toggler-icon"></span></button>
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="navbar-nav">
@@ -23,7 +23,7 @@
     </ul>
   </div>
 </nav>
-<section class="contacts d-flex flex-wrap-reverse">
+<section class="contacts d-flex flex-wrap">
   <div class="col-lg-6 col-md-6 col-12 p-0">
     <div class="contacts_leftside">
       <div class="constacts_leftside__upper">
@@ -59,15 +59,15 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <textarea class="project-form__textarea" name="comment" placeholder="Опишите задачу"></textarea>
+          <textarea class="project-form__textarea_advanced" name="comment" placeholder="Опишите задачу"></textarea>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6">
-          <input class="project-form__input" type="text" placeholder="Бюджет" required="true"/>
+          <input class="project-form__input_budget" type="text" placeholder="Бюджет" required="true"/>
         </div>
         <div class="col-lg-6">
-          <input class="project-form__input" type="text" placeholder="Срок" required="true"/>
+          <input class="project-form__input_dead" type="text" placeholder="Срок" required="true"/>
         </div>
       </div>
       <div class="row"><div class="input__wrapper">
@@ -78,11 +78,11 @@
 </label>
 </div>
       </div>
-      <div class="row justify-content-between flex-wrap-reverse">
+      <div class="row justify-content-lg-between flex-wrap-reverse align-items-center">
         <div class="col-lg-5 col-12">
           <p class="access">Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
         </div>
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-5 col-12">
           <button class="contact-form__btn">Отправить</button>
         </div>
       </div>

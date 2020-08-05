@@ -10,7 +10,7 @@
 <script src="https://kit.fontawesome.com/ff2f3aab2f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light"><a class="navbar-brand" href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"/></a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top align-items-center"><a class="navbar-brand" href="./index.html"><img class="logo" src="./img/logo.png" alt="logo"/></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="navbar-nav">
@@ -25,11 +25,13 @@
     </div>
   </nav>
   <section class="main">
-    <div class="title-block"><img class="title-block__upper" src="./img/design.svg"/><img class="title-block__lower" src="./img/sites.svg"/><a class="beginning" href="#"><span class="beginning__text">Начать проект</span><img class="beginning__arrow" src="./img/arrow.svg"/></a></div>
+    <div class="title-block"><img class="title-block__upper" src="./img/design.svg"/>
+      <div class="title-block_beginning"><img class="title-block__lower" src="./img/sites.svg"/><a class="beginning" href="#"><span class="beginning__text">Начать проект</span><img class="beginning__arrow" src="./img/arrow.svg"/></a></div>
+    </div>
   </section>
   <div class="carousel-block">
     <div class="container">
-      <h1>Ведем проекты по четкому плану</h1>
+      <h1 class="carousel-block-header">Ведем проекты по четкому плану</h1>
       <div class="row align-items-center">
         <div class="col-lg-11">
           <div class="carousel-cont">
@@ -114,9 +116,9 @@
     </div>
   </div>
   <div class="carousel-navigation container">
-    <p class="carousel-navigation_iterator active_iterator">Цель</p><img src="./img/arrow.svg" alt="arrow"/>
-    <p class="carousel-navigation_iterator">Аналитика</p><img src="./img/arrow.svg" alt="arrow"/>
-    <p class="carousel-navigation_iterator">Проектирование</p><img src="./img/arrow.svg" alt="arrow"/>
+    <p class="carousel-navigation_iterator active_iterator">Цель</p><img src="./img/arrow_black.svg" width="19" alt="arrow"/>
+    <p class="carousel-navigation_iterator">Аналитика</p><img src="./img/arrow_black.svg" width="19" alt="arrow"/>
+    <p class="carousel-navigation_iterator">Проектирование</p><img src="./img/arrow_black.svg" width="19" alt="arrow"/>
     <p class="carousel-navigation_iterator">Разработка</p>
   </div>
   <section class="works-block container">
@@ -166,19 +168,19 @@
             </div>
           </div>
           <div class="partners__logotypes col-lg-5 col-12">
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-5">
               <div class="col-lg-4 col-4"><img class="logotype" src="./img/logoGetDent.png" alt="logoGetDent"/></div>
-              <div class="col-lg-4 col-4"><img class="logotype" src="./img/daEdu.png" alt="logodaEdu"/></div>
+              <div class="col-lg-4 col-4"><img src="./img/daEdu.png" width="65%" alt="logodaEdu"/></div>
               <div class="col-lg-4 col-4"><img class="logotype" src="./img/saunMaster.png" alt="logoSaunMaster"/></div>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center mb-5">
               <div class="col-lg-4 col-4"><img class="logotype" src="./img/ideaClub.png" alt="logoIdeaClub"/></div>
-              <div class="col-lg-4 col-4"><img class="logotype" src="./img/stomClub.png" alt="logoStomClub"/></div>
+              <div class="col-lg-4 col-4"><img src="./img/stomClub.png" width="65%" alt="logoStomClub"/></div>
               <div class="col-lg-4 col-4"><img class="logotype" src="./img/mikeline.png" alt="logoMikeLine"/></div>
             </div>
             <div class="row align-items-center">
               <div class="col-lg-4 col-4"><img class="logotype" src="./img/nobilis.png" alt="logoNobilis"/></div>
-              <div class="col-lg-4 col-4"><img class="logotype" src="./img/sphere.png" alt="logoSphere"/></div>
+              <div class="col-lg-4 col-4"><img src="./img/sphere.png" width="65%" alt="logoSphere"/></div>
               <div class="col-lg-4 col-4"><img class="logotype" src="./img/novostroy.png" alt="logoNovostroy"/></div>
             </div>
           </div>
@@ -188,18 +190,18 @@
   </section>
   <section class="command-block">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-4 col-md-12 col-sm-12">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="command-block__card"><img class="command-block__card__image" src="./img/alexandr.jpeg" alt="director-image"/>
             <h1 class="command-block__card__title">Александр</h1><span class="command-block__card__subtitle">Основатель, IT-teamleader</span>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="col-xl-4 col-md-12 col-sm-12">
           <div class="command-block__card"><img class="command-block__card__image" src="./img/vladislav.jpeg" alt="art-director"/>
             <h1 class="command-block__card__title">Владислав</h1><span class="command-block__card__subtitle">Основатель, дизайн-менеджер</span>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12"><a class="beginning" href="#"><span class="command__text">Вся команда</span><img class="command__arrow" src="./img/arrow_black.svg"/></a></div>
+        <div class="col-xl-4 col-md-12 col-sm-12 p-0"><a class="beginning" href="#"><span class="command__text">Вся команда</span><img class="command__arrow" src="./img/arrow_black.svg"/></a></div>
       </div>
     </div>
   </section>
@@ -207,17 +209,17 @@
     <div class="advantages__first">
       <h1 class="advantages-title">Работать с нами</h1>
       <div class="row align-items-center">
-        <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
           <div class="advantages__first__card">
             <h2 class="advantages-subtitle">Надежно</h2><span class="advantages-description">Мы несем отвественность за результат, все договорненности закрепляем юридически.</span>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
           <div class="advantages__first__card">
             <h2 class="advantages-subtitle">Удобно</h2><span class="advantages-description">У нас выстроенные и понятные процессы работы. Мы всегда на связи и готовы отчитаться о каждом этапе.</span>
           </div>
         </div>
-        <div class="col-lg-4 col-md-12 col-sm-12">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
           <div class="advantages__first__card">
             <h2 class="advantages-subtitle">Легко</h2><span class="advantages-description">Мы всегда слушаем и слышим клиента и предлагаем решения, которые отвечаеют поставленным целям.</span>
           </div>
@@ -255,17 +257,17 @@
         <div class="col-lg-7 col-md-12 col-sm-11 col-11 text-center">
           <h1 class="email"> go@thegradient.ru</h1>
         </div>
-        <div class="col-lg-auto col-md-12 col-11">
+        <div class="col-lg-4 col-md-12 col-11 ml-lg-5">
           <input class="begin-project" type="submit" name="agreement" value="Начать проект"/>
         </div>
       </div>
       <div class="line"></div>
       <div class="row mt-3 justify-content-between">
-        <div class="col-lg-4 col-6">
+        <div class="col-lg-10 col-6">
           <p class="d-block">САНКТ-ПЕТЕРБУРГ, ТИХОРЕЦКИЙ 17Б</p>
         </div>
         <div class="col-lg-2 col-4">
-          <div class="socials-block d-flex align-items-center"><a class="socials-href" href="#"><img class="socials one" src="./img/behance.png" alt="behance_link"/></a><a class="socials-href" href="#"><img class="socials two" src="./img/instagram.png" alt="behance_link"/></a></div>
+          <div class="row align-items-center justify-content-lg-end"><a class="socials-href" href="#"><img class="socials one" src="./img/behance.png" alt="behance_link"/></a><a class="socials-href" href="#"><img class="socials two" src="./img/instagram.png" alt="behance_link"/></a></div>
         </div>
       </div>
       <div class="row footer__bottom align-items-lg-end">
@@ -301,7 +303,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-10 col-md-8 col-10 p-0">
+              <div class="col-lg-9 col-md-8 col-10 p-0">
                 <input class="footer_email" type="text" name="username" placeholder="Enter Your Username "/>
               </div>
               <div class="col-lg-1 col-md-8 col-2 p-0">
